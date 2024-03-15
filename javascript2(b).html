@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Javascript For In Loops</h2>
+<p>The for in statement loops through the properties of an object:</p>
+<p id="demo"></p>
+<script>
+const person={fname:"Chitkara",
+lname:"University",age:25};
+
+let txt="";
+for(let x in person) {
+    txt+=person[x]+" ";
+}
+document.getElementById("demo").innerHTML=txt;  
+</script>
+</body>
+</html>

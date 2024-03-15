@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition in CSS</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background: cyan;
+            transition: width 8s;
+        }
+        div:hover{
+            width: 300px;
+            background: red;
+        }
+        #div1{
+            margin-top: 50px;
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            transition: width 4s height 8s;
+        }
+        #div1:hover{
+            width: 400px;
+            height: 200px;
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>TRANSTION</div>
+    <div id="div1">CSS G5</div>
+</html>

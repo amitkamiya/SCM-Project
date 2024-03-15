@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes rotate{
+            0%{
+                transform: translate(-50%,-50%) rotate(0deg);
+            }
+            25%{
+                transform: translate(-50%,-50%) rotate(90deg);
+            }50%{
+                transform: translate(-50%,-50%) rotate(180deg);
+            }75%{
+                transform: translate(-50%,-50%) rotate(270deg);
+            }100%{
+                transform: translate(-50%,-50%) rotate(360deg);
+            }
+        }
+        #div1{
+            margin-top: 300px;
+            margin-left: 600px;
+            animation: rotate 5s linear infinite;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"><center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd2_3PLA0Jae2BBJ9y7F6dpBjFrOy1mCXxcA&usqp=CAU" alt="images" width="400px" height="300px"></center></div>
+</body>
+</html>

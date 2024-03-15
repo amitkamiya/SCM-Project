@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes one{
+            0%{background-color: yellow;top: 0px;left: 0px;}
+            25%{background-color: cyan;top: 0px;left: 150px;}
+            50%{background-color: bisque;top: 150px;left: 150px;}
+            75%{background-color: blueviolet;top: 150px;left: 0px;}
+            100%{background-color: yellow;top: 0px;left: 0px;}
+        }
+        #div1{
+            background: cyan;
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            transition: 5s;
+            animation-name: one;
+            animation-duration: 10s;
+            position: relative;
+            animation-iteration-count: infinite;
+        }
+        #div1:hover{
+            transform: translate(1000px);
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"><center>BALL</center></div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        @keyframes example{
+            from {background-color: blue;}
+            to {background-color: red;}
+        }
+        #div1{
+            width: 200px;
+            height: 100px;
+            background-color: blue;
+            animation-name: example;
+            animation-duration: 5s;
+        }
+        @keyframes example2{
+            0%{background-color: yellow;}
+            20%{background-color: cyan;}
+            40%{background-color: bisque;}
+            60%{background-color: blueviolet;}
+            80%{background-color: brown;}
+            100%{background-color: black;}
+
+        }
+        #div2{
+            margin-top: 50px;
+            width: 200px;
+            height: 100px;
+            background-color: yellow;
+            animation-name: example2;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">Animation</div>
+    <div id="div2">HI</div>
+</body>
+</html>
